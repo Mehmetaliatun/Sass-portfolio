@@ -46,3 +46,13 @@ footer.vertical {
     //* The text-orientation CSS property sets the orientation of the text characters in a line. It only affects text in vertical mode (when writing-mode is not horizontal-tb ). It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers*/
   }
 }
+footer.middle {
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem;
+  gap: 1rem;
+  @extend .link-style;
+}
