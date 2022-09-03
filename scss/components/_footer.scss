@@ -21,3 +21,28 @@ footer.horizontal {
   padding: 1rem;
   @extend .link-style;
 }
+
+footer.vertical {
+  //   border: 2px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  .social-icons {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    bottom: 1rem;
+    @extend .link-style;
+  }
+  .copyright {
+    position: fixed;
+    bottom: 1rem;
+    right: 3rem;
+    transform: rotate(90deg) translate(-3rem, -5rem);
+    // writing-mode: vertical-rl;
+    // text-orientation: mixed;
+    //* The text-orientation CSS property sets the orientation of the text characters in a line. It only affects text in vertical mode (when writing-mode is not horizontal-tb ). It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers*/
+  }
+}
