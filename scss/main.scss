@@ -1,0 +1,12 @@
+// sass --watch main.scss:main.css ile  oluyor
+// fakat biz watch scss kullandık
+
+// terminalden sass --watch ./scss/main.scss:./css/main.css izlenebilir dosya duzeni
+
+@import "./base/reset";
+
+@import "./abstracts/mixins", "./abstracts/variables";
+
+@import "./components/nav", "./components/responsive", "./components/footer";
+
+@import "./pages/about", "./pages/contacts", "./pages/home", "./pages/projects";
